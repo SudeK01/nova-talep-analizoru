@@ -196,3 +196,6 @@ cython_debug/
 
 firebase/*adminsdk*.json
 *.env
+# Firebase secret key
+backend/aivatandastalepanalizoru-firebase-adminsdk-fbsvc-a033db91e9.json
+
