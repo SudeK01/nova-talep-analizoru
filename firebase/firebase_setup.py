@@ -40,7 +40,7 @@ except Exception as e:
 # Firestore’a veri ekleme fonksiyonu
 def veri_ekle():
     try:
-        print("📡 Firestore’a veri ekleniyor...")  # Debug mesajı
+        print(" Firestore’a veri ekleniyor...")  # Debug mesajı
         doc_ref = db.collection("sikayetler").document()
         doc_ref.set({
             "konu": "Elektrik Kesintisi, elektrik yok.",
@@ -49,7 +49,7 @@ def veri_ekle():
             "tarih": firestore.SERVER_TIMESTAMP,
             "durum": "Beklemede"  # Yeni eklenen alan
         })
-        print("✅ Veri Firestore’a eklendi!")  # Başarı mesajı
+        print(" Veri Firestore’a eklendi!")  # Başarı mesajı
 
     except Exception as e:
         print(" Veri eklenirken hata oluştu:", e)  # Hata mesajını ekrana yazdır
@@ -82,7 +82,7 @@ def veriyi_guncelle():
 veriyi_guncelle()  # Fonksiyonu çalıştır
 
 def veriyi_sil():
-    print("🗑 Firestore’daki veri siliniyor...")  # Debug mesajı
+    print(" Firestore’daki veri siliniyor...")  # Debug mesajı
     docs = db.collection("sikayetler").stream()
     
     for doc in docs:  # Koleksiyondaki ilk belgeyi sil
@@ -95,8 +95,8 @@ veriyi_sil()  # Fonksiyonu çalıştır
 
 
 
-# 🛠 Firestore'daki tüm belgeleri siliyoruz...
-print("🗑 Firestore'daki TÜM belgeler siliniyor...")
+#  Firestore'daki tüm belgeleri siliyoruz...
+print(" Firestore'daki TÜM belgeler siliniyor...")
 
 def tum_verileri_sil():
     docs = db.collection("sikayetler").list_documents()
