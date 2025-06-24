@@ -63,7 +63,7 @@ exports.sikayetEklendigindeTahminYap = onDocumentCreated(
         tarih: new Date().toISOString()
       });
 
-      console.log(`✅ Tahmin başarıyla kaydedildi: ${skor}`);
+      console.log(`Tahmin başarıyla kaydedildi: ${skor}`);
     } catch (error) {
       console.error(" Tahmin oluşturma hatası:", error.message);
     }
