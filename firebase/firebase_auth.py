@@ -162,7 +162,7 @@ if __name__ == "__main__":
     sifre_sifirla(test_email)  # Şifre sıfırla
 
 
-# 🔍 Şikayet metnini analiz eden basit fonksiyon 
+#  Şikayet metnini analiz eden basit fonksiyon 
 def sikayet_analizi_yap(sikayet_metni):
     """
     Şikayet metnini analiz eder ve negatif kelimelere göre
@@ -423,7 +423,7 @@ def kategoriye_gore_sikayetleri_listele(kategori):
         print(f" Kategoriye göre listeleme sırasında hata oluştu: {e}")
 
 
-# 🔍 Mevcut tüm kategorileri listele
+#  Mevcut tüm kategorileri listele
 def listele_kategoriler():
     try:
         print(" Mevcut kategoriler listeleniyor...\n")
