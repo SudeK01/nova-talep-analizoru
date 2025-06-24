@@ -217,7 +217,7 @@ print("Aktif thread ismi:", threading.current_thread().name)
 
 if __name__ == "__main__":
 
-    print("✅ Flask app.run çağrılmak üzere")
+    print(" Flask app.run çağrılmak üzere")
 
     app.run(debug=False, port=5000, use_reloader=False)
 
