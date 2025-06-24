@@ -34,7 +34,7 @@ adminLoginForm.addEventListener("submit", async (e) => {
         const user = userCredential.user;
 
         if (user.email === ADMIN_EMAIL) {
-            console.log("✅ Admin girişi başarılı!");
+            console.log(" Admin girişi başarılı!");
             window.location.href = "../pages/admin_panel.html"; // Admin paneline yönlendir
         } else {
             alert(" Hatalı admin bilgileri!");
