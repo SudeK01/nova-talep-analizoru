@@ -1,0 +1,145 @@
+metin,eksiler,kategori,onem_skoru
+"Sokak lambası geceleri yanmıyor.",2,Güvenlik,2
+"Otobüs durağında tabela yerinden çıkmış.",2,Ulaşım,2
+"Kanalizasyon kapağı eğik duruyor.",2,Altyapı,2
+"Mahallede çöp birikiyor, zamanında alınmıyor.",2,Temizlik,2
+"Kütüphane önü çok pis, düzenli süpürülmüyor.",2,Temizlik,2
+"Yaya geçidinde çizgiler görünmüyor.",2,Altyapı,2
+"Sokakta hafif gaz kokusu var.",2,Güvenlik,2
+"İlaçlama eksik yapılıyor, sinek artışı var.",2,Çevre,2
+"Otobüslerin klimaları çalışmıyor.",2,Ulaşım,2
+"Parkta bazı banklar yerinden oynuyor.",2,Sosyal Alan,2
+"Logar kapağı çocukların oyun alanına çok yakın.",4,Altyapı,4
+"Mahalledeki parkta gece aydınlatma yok.",4,Güvenlik,4
+"Yol kenarında derin çukur oluşmuş.",4,Altyapı,4
+"Yaşlılar için yetersiz kaldırım rampaları var.",4,Altyapı,4
+"Çocuk oyun alanı zemini kaygan.",4,Sosyal Alan,4
+"Yokuş başında kaldırımsız bölüm tehlike oluşturuyor.",4,Altyapı,4
+"Köşe başı virajda trafik aynası eksik.",4,Güvenlik,4
+"Asansör sık sık bozuluyor, yaşlılar mağdur.",4,Güvenlik,4
+"Acil durumda 112 ambulansı sokağa giremedi.",5,Ulaşım,5
+"Mahallede gece gaz kokusu yoğun hissediliyor.",5,Güvenlik,5
+"Bir çocuk elektrik panosuna yaklaştı, güvenlik yok.",5,Güvenlik,5
+"Köprüde çatlak var, yaya geçişi riskli.",5,Altyapı,5
+"Deprem sonrası sitede kolon çatlağı oluştu.",5,Altyapı,5
+"Parkta açıkta elektrik kablosu vardı!",5,Güvenlik,5
+"Su borusu patladı, sokak sular altında.",5,Altyapı,5
+"Camii yanındaki rögar açık kaldı, düşme riski var.",5,Altyapı,5
+"Mahalle tabelası düşmüş.",0,Diğer,0
+"Çiçekliklerde toprak dağılmış.",0,Temizlik,0
+"Bank kenarı çizilmiş.",0,Sosyal Alan,0
+"Durakta yazı solarak silinmiş.",0,Ulaşım,0
+"Çöp kutusuna yapıştırılmış afiş yıpranmış.",0,Temizlik,0
+"Reklam panosu eğilmiş.",0,Diğer,0
+"Parkta oturma taşları yosun tutmuş.",0,Temizlik,0
+"Mahallede ağaçların etrafı yabani ot dolu.",0,Çevre,0
+"Kaldırımda yaprak birikintisi var.",0,Temizlik,0
+"Durakta afiş yırtılmış, okunmuyor.",0,Ulaşım,0
+"Parkta birkaç bankın boyası solmuş.",0,Sosyal Alan,0
+"Sokak lambası sabah da yanıyor.",0,Altyapı,0
+"Çöp kutusunun kapağı gevşek.",0,Temizlik,0
+"Bilgilendirme panosu silikleşmiş.",0,Diğer,0
+"Çiçeklikte çiçek kalmamış.",0,Çevre,0
+"Bisiklet park alanı kirli.",0,Sosyal Alan,0
+"Sokak lambaları sabah geç kapanıyor.",1,Altyapı,1
+"Mahalle tabelası eğilmiş.",1,Diğer,1
+"Parkta çimenler kurumuş.",1,Çevre,1
+"Çocuk parkında kaydırak paslanmış.",1,Sosyal Alan,1
+"Araç yolu kenarında taşlar oynuyor.",1,Altyapı,1
+"Otobüs durağında oturma alanı eksik.",1,Ulaşım,1
+"Bank vidaları gevşemiş.",1,Sosyal Alan,1
+"Bilgilendirme ekranı güneşte görünmüyor.",1,Diğer,1
+"Pazar yerinde temizlik aksıyor.",2,Temizlik,2
+"Yağmur sonrası su birikintisi kalıyor.",2,Altyapı,2
+"Otobüs saatleri düzensiz.",2,Ulaşım,2
+"Çöp kutuları sık boşaltılmıyor.",2,Temizlik,2
+"Toplu taşıma araçları havasız.",2,Ulaşım,2
+"Kaldırım kenarında çukur oluşmuş.",2,Altyapı,2
+"İlaçlama geç yapılıyor.",2,Çevre,2
+"Parkta güvenlik kamerası yok.",2,Güvenlik,2
+"Belediye ekipleri geç müdahale ediyor.",2,Diğer,2
+"Sokakta moloz bırakılmış.",2,Temizlik,2
+"Toplu taşıma çok kalabalık.",3,Ulaşım,3
+"Yaya geçitlerinde çizgiler silinmiş.",3,Altyapı,3
+"Sokakta açık rögar var.",3,Altyapı,3
+"Mahallede çamur sorunu var.",3,Çevre,3
+"Parkta aydınlatma yok.",3,Güvenlik,3
+"Kanalizasyon kokusu geliyor.",3,Altyapı,3
+"Sokak köpekleri çoğaldı.",3,Çevre,3
+"Otobüs tabelaları güncellenmemiş.",3,Ulaşım,3
+"Çocuk parkındaki salıncak kırık.",4,Sosyal Alan,4
+"Logar kapağı açık bırakılmış.",4,Altyapı,4
+"Yol ortasında büyük çukur var.",4,Altyapı,4
+"Karanlıkta yürümek tehlikeli.",4,Güvenlik,4
+"İnşaat artıkları yola dökülmüş.",4,Altyapı,4
+"Parkta elektrik panosu açıkta.",4,Güvenlik,4
+"Sokakta aşırı hız yapan araçlar var.",4,Güvenlik,4
+"Köprüde korkuluk yok.",4,Güvenlik,4
+"Acil ambulans geldiğinde yol açılamadı.",5,Ulaşım,5
+"Elektrik direğinden kıvılcım çıkıyor.",5,Güvenlik,5
+"Ana caddede trafik lambası çalışmıyor.",5,Altyapı,5
+"Gaz kokusu hissediliyor.",5,Güvenlik,5
+"Okul önünde yaya geçidi yok.",5,Güvenlik,5
+"Deprem sonrası çatlaklar oluştu.",5,Altyapı,5
+"Su borusu patladı, taşkın yaşandı.",5,Altyapı,5
+"Mahalle günlerdir susuz.",5,Altyapı,5
+"1 gündür mahallemizde sular kesik.",2,Altyapı,2
+"3 gündür hem su hem elektrik kesik, kimse ilgilenmiyor.",5,Altyapı,5
+"Elektrikler gün içinde sık sık kesiliyor, evde iş yapamıyoruz.",3,Altyapı,3
+"Sular sürekli gidip geliyor, hidroforlar zarar görüyor.",3,Altyapı,3
+"Bir haftadır elektrik direğinde kıvılcım var, kimse müdahale etmedi.",4,Altyapı,4
+"Hafta sonu otobüs seferleri çok seyrek, ulaşımda büyük sıkıntı yaşıyoruz.",2,Altyapı,2
+"Mahalledeki salıncaklar kırık, çocuklar oynayamıyor.",1,Altyapı,1
+"3 gündür hiçbir yerde su yok, banyo bile yapamıyoruz.",5,Altyapı,5
+"Elektrik gidince sular da kesiliyor, çözüm bulunmalı.",4,Altyapı,4
+"Geceleri sokak lambaları yanmıyor, güvensizlik oluştu.",3,Altyapı,3
+"Mezarlık yolu çamur içinde, yaşlılar ulaşamıyor.",2,Altyapı,2
+"Otobüslerin saatleri çok uyumsuz, işe geç kalıyoruz.",2,Altyapı,2
+"Sokak köpekleri artmaya başladı, belediye ilgilenmeli.",2,Altyapı,2
+"Sular kesildiğinde bilgilendirme yapılmıyor.",3,Altyapı,3
+"Hem su hem elektrik aynı anda kesildi, zor durumdayız.",5,Altyapı,5
+"Salıncak kırık, belediyeye bildirdik ama yapılmadı.",1,Altyapı,1
+"Sokaklarda temizlik yapılmıyor, çöpler birikiyor.",2,Altyapı,2
+"Hafta sonu otobüs yok, merkeze ulaşamıyoruz.",2,Altyapı,2
+"2 gündür elektrik yok, buzdolabındaki her şey bozuldu.",3,Altyapı,3
+"Her yağmurda elektrikler kesiliyor.",3,Altyapı,3
+"Mahallemizde çocuk parkı yok, çocuklar yolda oynuyor.",4,Altyapı,4
+"3 gündür hem elektrik hem su yok, bu nasıl hizmet!",5,Altyapı,5
+"Sular kesik, annem hasta, suya erişemiyoruz.",5,Altyapı,5
+"Çöp konteynerleri çok dolu, sinekler çoğaldı.",2,Altyapı,2
+"Otobüslerin güzergahı değişti, kimseye haber verilmedi.",2,Altyapı,2
+"Yeni yapılan parkta salıncaklar eksik.",1,Altyapı,1
+"Elektrik sürekli gidiyor, cihazlarımız zarar görüyor.",3,Altyapı,3
+"Sular sabah saatlerinde tamamen kesiliyor.",3,Altyapı,3
+"Habersiz elektrik kesintileri yapılıyor, 4 gündür elektrik yok.",4,Altyapı,4
+"Sokak lambaları gündüz yanıyor, gece sönüyor.",1,Altyapı,1
+"Sokak köpekleri bazı çocuklara saldırmış.",3,Altyapı,3
+"Belediyenin sitesinde sefer saatleri yanlış yazıyor.",1,Altyapı,1
+"Yağmur yağınca sular çamurlu akıyor.",2,Altyapı,2
+"Parktaki oturma bankları kırık.",1,Altyapı,1
+"3 gündür elektrikler yok, mahalle karanlıkta.",4,Altyapı,4
+"Sokaklarda su birikiyor, sivrisinekler çoğaldı.",2,Altyapı,2
+"Otobüsler çok kalabalık, ayakta seyahat ediyoruz.",2,Altyapı,2
+"Mahalle girişine çöp atılıyor, çevre kirliliği oluşuyor.",2,Altyapı,2
+"Sular kesiliyor ama arıza ekibi gelmiyor.",3,Altyapı,3
+"Su deposu patladı, bina sular altında.",5,Altyapı,5
+"Belediyenin temizlik aracı günlerdir uğramıyor.",2,Altyapı,2
+"Yol kenarları çok bozuk, bisiklet sürmek imkânsız.",3,Altyapı,3
+"Elektrik telleri sarkmış, tehlike arz ediyor.",4,Altyapı,4
+"Çocuk oyun alanı taşlarla dolu, tehlikeli.",2,Altyapı,2
+"Elektrik su kesintileri için çözüm talep ediyoruz.",4,Altyapı,4
+"Altyapı yetersiz, her yağmurda sorun yaşıyoruz.",3,Altyapı,3
+"2 gündür elektrik ve su kesik, kimse ilgilenmiyor.",5,Altyapı,5
+"Parkta başıboş köpekler çocuklara havlayarak korkutuyor, güvenliğimiz tehlikede.",3,Altyapı,3
+"Sokak kedilerinin sayısı hızla artıyor, artık sağlık ve temizlik sorunlarına yol açıyor.",2,Altyapı,2
+"Su ve elektrik faturası işlemleri için belediyeye gelen vatandaşlar saatlerce sıra bekliyor.",2,Altyapı,2
+"Ödeme işlemleri için belediyeye giden yaşlı vatandaşlar yeterli yönlendirme bulamıyor.",1,Altyapı,1
+"Mezarlıklarda isimsiz mezarların sayısı artıyor, kayıp kişilere ulaşmakta zorluk yaşanıyor.",2,Altyapı,2
+"Yoğun yağış sonrası şehir merkezindeki rögar kapakları tıkandı, sokaklar diz seviyesine kadar suyla doldu.",4,Altyapı,4
+"Mahallede haftalardır yanmayan sokak lambaları nedeniyle geceleri yürümek tehlikeli hale geldi.",3,Altyapı,3
+"Yağmur sonrası oluşan çukurlar sürücüler için büyük tehlike oluşturuyor, acil asfalt çalışması gerek.",4,Altyapı,4
+"Şehir hastanesine giden tüm yollar aynı anda trafiğe kapandı, ambulanslar yön değiştirmekte zorlandı.",4,Altyapı,4
+"Otobüs o kadar doluydu ki insanlar adım atamıyordu, bir yolcu sıkışıklıktan ve sıcaktan bayıldı.",3,Ulaşım,3
+"Yoğun yağış sonrası meydana gelen heyelanda toprak yola aktı, ulaşım tamamen durdu. Belediye önceden önlem almalıydı.",4,Altyapı,4
+"Yeni yapılan sahil yürüyüş yolunda aydınlatmalar eksik, akşam saatlerinde güvenlik endişesi yaratıyor.",3,Altyapı,3
+"Şehir meydanındaki çocuk parkında güvenlik bariyerleri yok, geçen gün bir çocuk oyun alanından yola fırladı.",4,Altyapı,4

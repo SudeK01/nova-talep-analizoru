@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeni Talep Ekle</title>
+    <link rel="stylesheet" href="../css/yeni_talep.css">
+    <link rel="icon" type="image/png" href="../assets/NOVA.png">
+</head>
+
+<body>
+    
+    <nav class="navbar">
+        <h2 class="logo">N.O.V.A.</h2>
+    </nav>
+
+    <main class="yeni-talep">
+        <section class="form-container">
+            <h2>Yeni Talep Oluştur</h2>
+            <form id="talep-form">
+                <label for="kategori">Kategori:</label>
+                <select id="kategori" required>
+                    <option value="">Lütfen bir kategori seçin</option>
+                    <option value="altyapı">Altyapı</option>
+                    <option value="aydınlatma">Aydınlatma</option>
+                    <option value="temizlik">Temizlik</option>
+                    <option value="park">Park</option>
+                    <option value="diğer">Diğer</option>
+                </select>
+
+                <label for="aciklama">Açıklama:</label>
+                <textarea id="aciklama" rows="4" placeholder="Talebinizi buraya yazın..." required></textarea>
+
+                <!-- Öncelik kısmı kaldırıldı -->
+                <button type="submit">Gönder</button>
+            </form>
+
+            <!-- Ana Sayfaya Dön Butonu -->
+            
+            <button class="anasayfa-btn" onclick="window.location.href = '../pages/dashboard.html';">Ana Sayfaya Dön</button>
+        </section>
+    </main>
+
+    
+    <div id="toast" class="toast">Talebiniz başarıyla kaydedildi!</div>
+
+    <script type="module" src="../js/yeni_talep.js"></script>
+
+</body>
+
+</html>
+

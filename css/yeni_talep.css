@@ -1,0 +1,163 @@
+
+
+/* Genel sayfa stili */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4f7cc5; /* mavi renk */
+    padding: 20px;
+    border-bottom: 5px solid #2c537d; /* Kalın mavi çizgi */
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Ana konteyner */
+  .yeni-talep {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Başlık */
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Form alanları */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  select, textarea {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+  }
+  
+  textarea {
+    min-height: 100px;
+  }
+  
+  button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #7494ec;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color:#7494ec;
+  }
+  
+  /* Toast mesajı */
+  .toast {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+  }
+  
+  .toast.show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadeout {
+    from {opacity: 1;}
+    to {opacity: 0;}
+  }
+  
+  /* Responsive tasarım */
+  @media (max-width: 600px) {
+    .yeni-talep {
+      padding: 20px;
+      margin: 20px;
+    }
+  
+    button {
+      padding: 10px 15px;
+      font-size: 14px;
+    }
+  }
+  .anasayfa-btn {
+    background-color: #3852b8;
+    color: white;
+    padding: 15px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute; /* Sol üst köşeye sabitlemek için */
+    top: 25px; /* Üstten biraz boşluk */
+    left: 20px; /* Soldan biraz boşluk */
+  }
+  
+  .anasayfa-btn:hover {
+    background-color: #3852b8;
+  }
+  
+  /* ✅ Badge stilleri eklendi */
+.badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+  display: inline-block;
+}
+
+.badge-siraya-alindi {
+  background-color: #f1c40f;
+}
+
+.badge-calisma-basladi {
+  background-color: #3498db;
+}
+
+.badge-cozum-uretildi {
+  background-color: #2ecc71;
+}

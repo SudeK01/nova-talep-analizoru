@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #3c3c3c;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.logout-btn {
+    padding: 0.5rem 1rem;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 1rem; 
+}
+
+.admin-panel-btn {
+    padding: 0.5rem 1rem;
+    background-color: #4c6ef5;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.admin-panel-btn:hover {
+    background-color: #364fc7;
+}
+
+.tahmin-panel {
+    padding: 2rem;
+}
+
+.panel-header {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.tahmin-tablosu {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.tahmin-tablosu th,
+.tahmin-tablosu td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.tahmin-tablosu th {
+    background-color: #f0f0f0;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.3rem 0.6rem;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.badge-low {
+    background-color: #3498db;
+}
+
+.badge-mid {
+    background-color: #d4ac0d;
+    color: #fff;
+}
+
+.badge-high {
+    background-color: #e74c3c;
+}
+
+.filtre-sirala-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.filtreler {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.filtreler label {
+    font-weight: bold;
+}
+
+.filtre-btn {
+    padding: 0.4rem 0.8rem;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.filtre-btn.aktif {
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+}
+
+.filtre-btn:hover {
+    background-color: #eee;
+}

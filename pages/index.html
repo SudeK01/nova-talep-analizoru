@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N.O.V.A.</title>
+    <link rel="icon" type="image/png" href="../assets/NOVA.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+
+    <!-- Kullanıcı Türü Seçimi -->
+<div class="user-type-select">
+    <label for="user-type">Giriş Türü:</label>
+    <select id="user-type">
+        <option value="kullanici">Kullanıcı Girişi</option>
+        <option value="admin">Admin Girişi</option>
+    </select>
+</div>
+
+
+    <!-- Giriş Yap Formu -->
+    <div class="form-box login">
+        <form id="login-form"> <!-- ✅ Giriş formuna ID verdim -->
+            <h1>Giriş Yap</h1>
+
+            <div class="input-box">
+                <input type="email" id="login-email" placeholder="Email" required> <!-- ✅ Email inputu, ID doğru -->
+                <i class='bx bxs-user'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="password" id="login-password" placeholder="Şifre" required> <!-- ✅ Şifre inputu -->
+                
+                <span class="show-password" onclick="togglePassword('login-password')">
+                    <i class='bx bx-show'></i>
+                </span>
+            </div>
+
+            <div class="forgot">
+                <a href="#" onclick="resetPassword()">Şifremi Unuttum</a>
+            </div>
+
+            <button type="submit" class="btn">Giriş Yap</button>
+            <p>veya başka uygulama ile giriş yap</p>
+
+            <div class="social-icons">
+                <a href="#" id="google-btn"><i class='bx bxl-google'></i></a>
+            </div>
+
+        </form>
+    </div>
+
+
+    <!-- Kayıt Ol Formu -->
+    <div class="form-box register">
+        <form id="register-form"> <!-- Kayıt formuna da ID verdik -->
+            <h1>Kayıt Ol</h1>
+
+            <div class="input-box">
+                <input type="text" id="register-name" placeholder="Ad Soyad" required> <!-- Kullanıcı adı için -->
+                <i class='bx bxs-user'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="email" id="register-email" placeholder="Email" required> <!-- Email için -->
+                <i class='bx bxs-envelope'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="password" id="register-password" placeholder="Şifre" required> <!-- Şifre için -->
+        
+                <span class="show-password" onclick="togglePassword('register-password')">
+                    <i class='bx bx-show'></i>
+                </span>
+            </div>
+
+            <button type="submit" class="btn">Kayıt Ol</button>
+            <p>veya başka uygulama ile kayıt ol</p>
+
+            <div class="social-icons">
+                <a href="#" id="google-btn-register"><i class='bx bxl-google'></i></a>
+            </div>
+            
+            <div class="admin-giris">
+                <a href="../pages/admin_login.html">Admin Girişi</a>
+              </div>
+              
+        </form>
+    </div>
+
+
+    <!-- Form Geçiş Paneli -->
+    <div class="toggle-box">
+        <div class="toggle-panel toggle-left">
+            <h1>Merhaba!</h1>
+            <p>Hesabın yok mu?</p>
+            <button class="btn register-btn">Kayıt Ol</button>
+        </div>
+        <div class="toggle-panel toggle-right">
+            <h1>Tekrar Hoşgeldin!</h1>
+            <p>Hesabın var mı?</p>
+            <button class="btn login-btn">Giriş Yap</button>
+        </div>
+    </div>
+
+</div>
+
+<script src="../js/script.js"></script>
+
+<script>
+    document.getElementById("user-type").addEventListener("change", function () {
+      if (this.value === "admin") {
+        window.location.href = "../pages/admin_login.html";
+      }
+    });
+  </script>
+
+<!-- Firebase SDK -->
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+    import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendPasswordResetEmail, GoogleAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js";
+    import { getFirestore, doc, setDoc, getDoc } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
+  
+    const firebaseConfig = {
+      apiKey: "AIzaSyDbK46_HgV4QvWZgX4A82or66Y1Y2oJoOk",
+      authDomain: "aivatandastalepanalizoru.firebaseapp.com",
+      projectId: "aivatandastalepanalizoru",
+      storageBucket: "aivatandastalepanalizoru.appspot.com",
+      messagingSenderId: "328882761052",
+      appId: "1:328882761052:web:8a66d9696e46b82caca599",
+      measurementId: "G-JFCGHV7SNZ"
+    };
+  
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const db = getFirestore(app);
+    const provider = new GoogleAuthProvider();
+  
+    // Kayıt
+    document.getElementById("register-form").addEventListener("submit", async (e) => {
+      e.preventDefault();
+  
+      const email = document.getElementById("register-email").value.trim();
+      const password = document.getElementById("register-password").value;
+  
+      try {
+        const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+        const user = userCredential.user;
+  
+        // Firestore'a kullanıcıyı kaydet
+        await setDoc(doc(db, "kullanicilar", user.uid), {
+          email: user.email,
+          rol: "kullanici"
+        });
+  
+        Swal.fire("Kayıt Başarılı!", "Yönlendiriliyorsunuz...", "success").then(() => {
+          window.location.href = "../pages/dashboard.html";
+        });
+      } catch (error) {
+        Swal.fire("Kayıt Hatası", error.message, "error");
+      }
+    });
+  
+    // Giriş
+    document.getElementById("login-form").addEventListener("submit", async (e) => {
+      e.preventDefault();
+  
+      const email = document.getElementById("login-email").value.trim();
+      const password = document.getElementById("login-password").value;
+  
+      try {
+        await signInWithEmailAndPassword(auth, email, password);
+        const user = auth.currentUser;
+  
+        const ref = doc(db, "kullanicilar", user.uid);
+        const snap = await getDoc(ref);
+  
+        if (snap.exists() && snap.data().rol === "admin") {
+          window.location.href = "../pages/admin_panel.html";
+        } else {
+          window.location.href = "../pages/dashboard.html";
+        }
+      } catch (error) {
+        Swal.fire("Giriş Hatası", error.message, "error");
+      }
+    });
+  
+    // Google ile Giriş
+    document.getElementById("google-btn").addEventListener("click", async (e) => {
+      e.preventDefault();
+      try {
+        const result = await signInWithPopup(auth, provider);
+        Swal.fire("Giriş Başarılı!", result.user.email, "success").then(() => {
+          window.location.href = "../pages/dashboard.html";
+        });
+      } catch (error) {
+        Swal.fire("Google Giriş Hatası", error.message, "error");
+      }
+    });
+  
+    // Şifre Göster/Gizle
+    window.togglePassword = function (inputId) {
+      const input = document.getElementById(inputId);
+      input.type = input.type === "password" ? "text" : "password";
+    };
+  
+    // Şifre Sıfırlama
+    window.resetPassword = function () {
+      const email = prompt("Şifre sıfırlama için e-posta adresinizi girin:");
+      if (email) {
+        sendPasswordResetEmail(auth, email)
+          .then(() => alert("Sıfırlama maili gönderildi."))
+          .catch((error) => alert("Hata: " + error.message));
+      }
+    };
+  </script>
+  
+
+</body>
+</html>

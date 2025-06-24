@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>N.O.V.A. | Admin Paneli</title>
+  <link rel="stylesheet" href="../css/admin_panel.css">
+  <link rel="icon" type="image/png" href="../assets/NOVA.png">
+</head>
+
+<body>
+  <nav class="navbar">
+    <h2 class="logo">N.O.V.A. Admin Paneli</h2>
+    <button class="logout-btn">Çıkış Yap</button>
+  </nav>
+
+  <main class="admin-panel">
+    <h2 class="admin-welcome">Hoşgeldin Admin!</h2>
+    <h2>Admin Paneli</h2>
+    
+
+    <div class="filtreler">
+      <!-- Tarih sıralama -->
+      <label for="tarihSiralaAdmin">Tarihe Göre:</label>
+      <select id="tarihSiralaAdmin">
+        <option value="desc">En Yeni</option>
+        <option value="asc">En Eski</option>
+      </select>
+    
+      <!-- Kategori filtreleme -->
+      <label for="kategoriSecAdmin">Kategori:</label>
+      <select id="kategoriSecAdmin">
+        <option value="hepsi">Tüm Kategoriler</option>
+        <option value="park">Park</option>
+        <option value="temizlik">Temizlik</option>
+        <option value="aydınlatma">Aydınlatma</option>
+        <option value="altyapı">Alt Yapı</option>
+      </select>
+    </div>
+
+
+      <!-- Önem sırasına göre filtreleme -->
+      <label for="onemSiralaAdmin">Önem Sırası:</label>
+      <select id="onemSiralaAdmin">
+        <option value="varsayilan">Genel Sıralama</option>
+        <option value="onemli">Önemli Önce</option>
+        <option value="onemsiz">Önemsiz Önce</option>
+      </select>
+    
+
+      <!-- Duruma göre filtreleme -->
+      <label for="durumSecAdmin">Durum:</label>
+      <select id="durumSecAdmin">
+        <option value="hepsi">Tüm Durumlar</option>
+        <option value="Sıraya Alındı">Sıraya Alındı</option>
+        <option value="Çalışmalara Başlandı">Çalışmalara Başlandı</option>
+        <option value="Çözüm Üretildi">Çözüm Üretildi</option>
+      </select>
+      
+      
+      <!-- Tahmin Sayfası Butonu -->
+      <button onclick="location.href='tahminler.html'" style="margin-top: 10px; padding: 10px 15px; background-color: #007bff; color: white; border: none; border-radius: 6px; cursor: pointer;">
+      🔍 Tahmin Sayfasına Git
+      </button>
+     
+
+
+    <table class="talep-tablosu">
+      <thead>
+        <tr>
+          <th>UID</th>
+          <th>Ad</th>
+          <th>Kategori</th>
+          <th>Şikayet</th>
+          <th>Tarih</th>
+          <th>Durum</th>
+          <th>İşlemler</th>
+        </tr>
+      </thead>
+      <tbody id="admin-talep-listesi">
+        <!-- Şikayetler buraya dinamik gelecek -->
+      </tbody>
+    </table>
+  </main>
+
+  <script src="../js/admin_panel.js" type="module"></script>
+  
+
+   
+</body>
+
+</html>
+
+
+

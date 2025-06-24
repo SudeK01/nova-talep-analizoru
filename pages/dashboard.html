@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N.O.V.A. | Kullanıcı Paneli</title>
+    <link rel="icon" type="image/png" href="../assets/NOVA.png">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <h2 class="logo">N.O.V.A.</h2>
+        <button class="logout-btn">Çıkış Yap</button>
+    </nav>
+
+    <main class="dashboard">
+        <section class="dashboard-header">
+            <h1>Hoşgeldiniz!</h1>
+            <!-- yeni_talep.html için bağlantıyı güncelledik -->
+            <button class="add-btn" onclick="location.href='../pages/yeni_talep.html';"><i class='bx bx-plus'></i> Yeni Talep Ekle</button>
+        </section>
+
+        <section class="talep-listesi">
+            <h2>Talep Listesi</h2>
+
+            <!-- Tarihe Göre Sıralama Dropdown'u -->
+            <div class="tarih-sirala">
+                <label for="tarihSirala">Tarihe Göre:</label>
+                <select id="tarihSirala">
+                  <option value="desc">En Yeni</option>
+                  <option value="asc">En Eski</option>
+                </select>
+              </div>
+
+            <div class="kategori-filtre">
+                <label for="kategori-sec">Kategoriye Göre Filtrele:</label>
+                <select id="kategori-sec">
+                  <option value="hepsi">Tüm Kategoriler</option>
+                  <option value="park">Park</option>
+                  <option value="temizlik">Temizlik</option>
+                  <option value="aydınlatma">Aydınlatma</option>
+                </select>
+              </div>
+
+            <ul id="talep-container"></ul>
+        </section>
+    </main>
+
+ 
+    <script type="module" src="../js/dashboard.js"></script>
+    
+
+</body>
+
+</html>

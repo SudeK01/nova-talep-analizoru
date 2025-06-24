@@ -1,0 +1,214 @@
+/* Genel stil ayarları */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #e2e2e2, #c9d6ff);
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #3c3c3c;
+}
+
+.logout-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.logout-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* Dashboard */
+.dashboard {
+  max-width: 900px;
+  margin: 2rem auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.dashboard-header h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.add-btn {
+  background-color: #7494ec;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #5a7bd8;
+}
+
+/* Talep Listesi */
+.talep-listesi h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+#talep-container {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#talep-container li {
+  padding: 0.75rem 1rem;
+  background-color: #f0f4ff;
+  margin-bottom: 0.75rem;
+  border-left: 5px solid #7494ec;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.kullanici-bilgi {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #f1f1f1;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.talep-kart {
+  background: #f1f4ff;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.talep-ust {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ✅ DEĞİŞTİRİLDİ: rozet */
+.rozet {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+  display: inline-block;
+}
+
+.rozet.siraya-alindi {
+  background-color: #f1c40f;
+}
+
+.rozet.calisma-basladi {
+  background-color: #3498db;
+}
+
+.rozet.cozum-uretildi {
+  background-color: #2ecc71;
+}
+
+.talep-alt {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #555;
+}
+
+.talep-islemler button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+  font-size: 18px;
+  color: #444;
+}
+
+.talep-ekle-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin-top: 10px;
+}
+
+.talep-ekle-form textarea {
+  resize: vertical;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+#kaydet-btn {
+  background-color: #7494ec;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+
+/* -- Kategori filtreleme stilleri -- */
+.kategori-filtre {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.kategori-filtre label {
+  color: #333;
+}
+
+.kategori-filtre select {
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}

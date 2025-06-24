@@ -1,0 +1,151 @@
+/* Genel sayfa stili */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar düzenlemeleri */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4f7cc5; /* mavi renk */
+    padding: 20px;
+    border-bottom: 5px solid #2c537d; /* Kalın mavi çizgi */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Admin Paneli */
+.admin-panel {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Talep Tablosu */
+.talep-tablosu {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.talep-tablosu th, .talep-tablosu td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.talep-tablosu th {
+    background-color: #4f7cc5;
+    color: white;
+}
+
+.talep-tablosu td {
+    background-color: #f9f9f9;
+}
+
+/* Butonlar */
+.onayla-btn, .reddet-btn {
+    padding: 8px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.onayla-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.reddet-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.onayla-btn:hover, .reddet-btn:hover {
+    opacity: 0.8;
+}
+
+/* Çıkış butonu */
+.logout-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #f44336;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    opacity: 0.8;
+}
+
+/* Durum mesajları için stiller */
+.durum-mesaj {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+}
+
+.durum-mesaj.onaylandi {
+    color: green;
+}
+
+.durum-mesaj.reddedildi {
+    color: red;
+}
+
+/* Rozet Stilleri */
+.badge {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+}
+
+/* Sarı - Sıraya Alındı */
+.badge-siraya-alindi {
+    background-color: #f1c40f;
+}
+
+/* Mavi - Çalışmalara Başlandı */
+.badge-calisma-basladi {
+    background-color: #3498db;
+}
+
+/* Yeşil - Çözüm Üretildi */
+.badge-cozum-uretildi {
+    background-color: #2ecc71;
+}
+
+.admin-hello {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #4f7cc5; /* Admin mavisi gibi bir ton */
+}
+  /* Şu an doğrudan kullanılmıyor ama eklemek istersek hazır gibi */

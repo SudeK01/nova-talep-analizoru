@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>NOVA | Tahminler</title>
+    <link rel="stylesheet" href="../css/tahminler.css">
+    <link rel="icon" type="image/png" href="../assets/NOVA.png">
+</head>
+<body>
+    <nav class="navbar">
+        <h2 class="logo">N.O.V.A. Tahmin Paneli</h2>
+        <div class="nav-buttons">
+            <button class="admin-panel-btn" onclick="window.location.href='../pages/admin_panel.html'">Admin Paneli</button>
+            <button class="logout-btn">Çıkış Yap</button>
+        </div>
+    </nav>
+
+    <main class="tahmin-panel">
+        <h2 class="panel-header"> Eksiler Skoru Tahminleri</h2>
+
+        <div class="filtre-sirala-kapsayici">
+            <div class="filtreler">
+                <button data-filtre="hepsi" class="filtre-btn aktif">Hepsi</button>
+                <button data-filtre="low" class="filtre-btn">Düşük Önem</button>
+                <button data-filtre="mid" class="filtre-btn">Orta Önem</button>
+                <button data-filtre="high" class="filtre-btn">Yüksek Önem</button>
+            </div>
+
+            <div class="sirala">
+                <label for="sirala-select">Sıralama:</label>
+                <select id="sirala-select">
+                    <option value="default">Varsayılan</option>
+                    <option value="artan">Skora Göre Artan</option>
+                    <option value="azalan">Skora Göre Azalan</option>
+                </select>
+            </div>
+        </div>
+
+        <table class="tahmin-tablosu">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Şikayet Metni</th>
+                    <th>Önem Durumu</th>
+                    <th>Tahmin Skoru</th>
+                </tr>
+            </thead>
+            <tbody id="tahmin-tablosu-govde">
+                <!-- Tahminler buraya dinamik olarak eklenecek -->
+            </tbody>
+        </table>
+    </main>
+
+    <script src="../js/tahminler.js" type="module"></script>
+</body>
+</html>
